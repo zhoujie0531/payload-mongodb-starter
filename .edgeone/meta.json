@@ -3,7 +3,81 @@
     "headers": [],
     "redirects": [],
     "rewrites": [],
-    "caches": []
+    "caches": [],
+    "has404": true
   },
-  "routes": []
+  "has404": true,
+  "nextRoutes": [
+    {
+      "path": "/posts",
+      "isStatic": false,
+      "initialRevalidateSeconds": 600,
+      "srcRoute": "/posts",
+      "dataRoute": "/posts.rsc"
+    },
+    {
+      "path": "/",
+      "isStatic": true,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc"
+    },
+    {
+      "path": "/_app"
+    },
+    {
+      "path": "/_error"
+    },
+    {
+      "path": "/_document"
+    },
+    {
+      "path": "/404",
+      "isStatic": true
+    },
+    {
+      "path": "/_not-found"
+    },
+    {
+      "path": "/pages-sitemap.xml"
+    },
+    {
+      "path": "/posts-sitemap.xml"
+    },
+    {
+      "path": "/next/exit-preview"
+    },
+    {
+      "path": "/next/preview"
+    },
+    {
+      "path": "/next/seed"
+    },
+    {
+      "path": "/api/graphql-playground"
+    },
+    {
+      "path": "/api/graphql"
+    },
+    {
+      "path": "/search"
+    },
+    {
+      "path": "/_next/image"
+    },
+    {
+      "path": "/api/:slug*"
+    },
+    {
+      "path": "/:slug"
+    },
+    {
+      "path": "/posts/:slug"
+    },
+    {
+      "path": "/posts/page/:pageNumber"
+    },
+    {
+      "path": "/admin/:segments*?"
+    }
+  ]
 }
