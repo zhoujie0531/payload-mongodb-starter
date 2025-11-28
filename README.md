@@ -1,6 +1,6 @@
 # EdgeOne Payload CMS With MongoDB Website Template
 
-This is a Payload CMS with MongoDB Website Template designed to power websites, blogs, or portfolios ranging from small projects to enterprise-level applications. This repository includes a fully functional backend, an enterprise-grade admin panel, and a beautifully designed, production-ready website.
+This is a PayloadCMS with MongoDB Website Template designed to power websites, blogs, or portfolios ranging from small projects to enterprise-level applications. This repository includes a fully functional backend, an enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
 This template is ideal for:
 
@@ -22,6 +22,7 @@ This template is ideal for:
      openssl rand -base64 32
      ```
    - **NEXT_PUBLIC_SERVER_URL**: Your website URL like: `https://payload-mongodb-starter.edgeone.app`
+   - **PREVIEW_SECRET**: Used to validate preview requests
 
 2. [Go to the deployment page](https://console.tencentcloud.com/edgeone/pages/new?template=payload-mongodb-starter&from=open_templates) and fill in all prepared environment variables.
 
@@ -48,3 +49,7 @@ PREVIEW_SECRET=YOUR_SECRET_HERE
 
 2. `pnpm install && pnpm dev` to install dependencies and start the dev server
 3. open `http://localhost:3000` to open the app in your browser
+
+### Learn More
+
+[Payload Docs](https://payloadcms.com/docs/getting-started/what-is-payload)
