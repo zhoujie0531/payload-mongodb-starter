@@ -9,9 +9,8 @@ const nextConfig = {
   experimental: {
     serverActions: {
       allowedOrigins: [
-        'localhost:3000',
-        'payload-mongodb-starter.edgeone.app',
-        '*.pages-scf-sg-pro.qcloudteo.com',
+        '*.edgeone.app',
+        '*.qcloudteo.com',
       ],
     },
   },
