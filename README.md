@@ -23,12 +23,17 @@ This template is ideal for:
      ```
    - **NEXT_PUBLIC_SERVER_URL**: Your website URL like: `https://payload-mongodb-starter.edgeone.app`
    - **PREVIEW_SECRET**: Used to validate preview requests
+   - **S3_BUCKET**: S3 Storage Configuration 
+   - **S3_REGION**: S3 Storage Configuration 
+   - **S3_ACCESS_KEY_ID**: S3 Storage Configuration 
+   - **S3_SECRET_ACCESS_KEY**: S3 Storage Configuration 
+   - **S3_ENDPOINT**: S3 Storage Configuration 
 
-2. [Go to the deployment page](https://console.tencentcloud.com/edgeone/pages/new?template=payload-mongodb-starter&from=open_templates) and fill in all prepared environment variables.
+2. One-click deployment to EdgeOne Pages:
 
-   ![](https://cloudcache.tencent-cloud.com/qcloud/ui/static/static_source_business/0f296398-aa8a-4d8f-b70f-45e4999c8faa1.png)
+    [![Use EdgeOne Pages to deploy](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzhoujie0531%2Fpayload-mongodb-starter)
 
-3. Click "Create" to start the deployment process.
+3. After filling in the environment variables, click the **Create** button to start the deployment.
 
 ### Local Development
 
@@ -45,6 +50,12 @@ NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 CRON_SECRET=YOUR_CRON_SECRET_HERE
 # Used to validate preview requests
 PREVIEW_SECRET=YOUR_SECRET_HERE
+# S3 Storage Configuration 
+S3_BUCKET=xxx
+S3_REGION=xxx
+S3_ACCESS_KEY_ID=xxx
+S3_SECRET_ACCESS_KEY=xxx
+S3_ENDPOINT=xxx
 ```
 
 2. `pnpm install && pnpm dev` to install dependencies and start the dev server
