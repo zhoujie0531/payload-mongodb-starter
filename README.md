@@ -48,7 +48,7 @@ PAYLOAD_SECRET=YOUR_PAYLOAD_SECRET_HERE
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 # Used to validate preview requests
 PREVIEW_SECRET=YOUR_SECRET_HERE
-# S3 Storage Configuration 
+# S3 Storage Configuratio, Storage of uploaded files
 S3_BUCKET=xxx
 S3_REGION=xxx
 S3_ACCESS_KEY_ID=xxx
