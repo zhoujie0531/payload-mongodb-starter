@@ -1,4 +1,4 @@
-# EdgeOne Payload CMS + MongoDB 网站模板
+# Payload CMS + MongoDB
 
 这是一个基于 PayloadCMS 和 MongoDB 的网站模板，适用于构建从小型项目到企业级应用的网站、博客或作品集。本仓库包含功能完整的后端、企业级管理面板，以及设计精美、可直接用于生产环境的网站前端。
 

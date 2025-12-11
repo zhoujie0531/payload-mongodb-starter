@@ -1,4 +1,4 @@
-# EdgeOne Payload CMS With MongoDB Website Template
+# Payload CMS with MongoDB
 
 This is a PayloadCMS with MongoDB Website Template designed to power websites, blogs, or portfolios ranging from small projects to enterprise-level applications. This repository includes a fully functional backend, an enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
