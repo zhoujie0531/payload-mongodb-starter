@@ -57,6 +57,9 @@ S3_ENDPOINT=xxx
 
 ### How it works
 The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+
+![payloadcms dashboard](https://cloudcache.tencent-cloud.com/qcloud/ui/static/other_external_resource/76012d07-80b4-435d-a1ba-0705d4849346.png)
+
 #### Collections
 
 See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
@@ -83,6 +86,17 @@ See the [Collections](https://payloadcms.com/docs/configuration/collections) doc
 
   A taxonomy used to group posts together. Categories can be nested inside of one another, for example "News > Technology". See the official [Payload Nested Docs Plugin](https://payloadcms.com/docs/plugins/nested-docs) for more details.
 
+- ##### Forms & Form Submissions
+  This template also pre-configured with the official [Form Builder Plugin](hhttps://payloadcms.com/docs/plugins/form-builder). This plugin allows you to build and manage custom forms directly within the Admin Panel, all form submissions are stored directly in your database and are managed directly from the Admin Panel.
+
+- ##### Redirects
+
+  If you are migrating an existing site or moving content to a new URL, you can use the `redirects` collection to create a proper redirect from old URLs to new ones. This will ensure that proper request status codes are returned to search engines and that your users are not left with a broken link. This template comes pre-configured with the official [Payload Redirects Plugin](https://payloadcms.com/docs/plugins/redirects) for complete redirect control from the admin panel.
+
+- ##### Search
+
+  This template also pre-configured with the official [Payload Search Plugin](https://payloadcms.com/docs/plugins/search) to showcase how SSR search features can easily be implemented into Next.js with Payload.
+  
 #### Globals
 
 See the [Globals](https://payloadcms.com/docs/configuration/globals) docs for details on how to extend this functionality.

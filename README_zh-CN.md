@@ -59,6 +59,8 @@ S3_ENDPOINT=xxx
 ### 工作原理
 Payload 配置专门针对大多数网站的需求进行了定制，预配置如下：
 
+![payloadcms dashboard](https://cloudcache.tencent-cloud.com/qcloud/ui/static/other_external_resource/76012d07-80b4-435d-a1ba-0705d4849346.png)
+
 #### Collections（集合）
 
 详细信息请参阅 [Collections](https://payloadcms.com/docs/configuration/collections) 文档。
@@ -84,6 +86,18 @@ Payload 配置专门针对大多数网站的需求进行了定制，预配置如
 - ##### Categories（分类）
 
   用于将文章分组的分类法。分类可以嵌套，例如"新闻 > 科技"。详情请参阅官方 [Payload Nested Docs Plugin](https://payloadcms.com/docs/plugins/nested-docs)。
+
+- ##### Forms & Form Submissions（表单与表单提交）
+
+  本模板预配置了官方 [Form Builder Plugin](https://payloadcms.com/docs/plugins/form-builder)。该插件允许您直接在管理面板中构建和管理自定义表单，所有表单提交数据都直接存储在数据库中，并可在管理面板中直接管理。
+
+- ##### Redirects（重定向）
+
+  如果您正在迁移现有网站或将内容移动到新 URL，可以使用 `redirects` 集合创建从旧 URL 到新 URL 的正确重定向。这将确保向搜索引擎返回正确的请求状态码，并确保用户不会遇到失效链接。本模板预配置了官方 [Payload Redirects Plugin](https://payloadcms.com/docs/plugins/redirects)，可在管理面板中完全控制重定向。
+
+- ##### Search（搜索）
+
+  本模板还预配置了官方 [Payload Search Plugin](https://payloadcms.com/docs/plugins/search)，展示了如何在 Next.js 中使用 Payload 轻松实现 SSR 搜索功能。
 
 #### Globals（全局配置）
 
