@@ -55,6 +55,55 @@ S3_ENDPOINT=xxx
 2. `pnpm install && pnpm dev` to install dependencies and start the dev server
 3. open `http://localhost:3000` to open the app in your browser
 
-### Learn More
+### How it works
+The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+#### Collections
 
-[Payload Docs](https://payloadcms.com/docs/getting-started/what-is-payload)
+See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
+
+- ##### Users (Authentication)
+
+  Users are auth-enabled collections that have access to the admin panel and unpublished content. See [Access Control](#access-control) for more details.
+
+  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
+
+- ##### Posts
+
+  Posts are used to generate blog posts, news articles, or any other type of content that is published over time. All posts are layout builder enabled so you can generate unique layouts for each post using layout-building blocks, see Layout Builder(#layout-builder) for more details. Posts are also draft-enabled so you can preview them before publishing them to your website, see [Draft Preview](#draft-preview) for more details.
+
+- ##### Pages
+
+  All pages are layout builder enabled so you can generate unique layouts for each page using layout-building blocks. Pages are also draft-enabled so you can preview them before publishing them to your website.
+
+- ##### Media
+
+  This is the uploads enabled collection used by pages, posts, and projects to contain media like images, videos, downloads, and other assets. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
+
+- ##### Categories
+
+  A taxonomy used to group posts together. Categories can be nested inside of one another, for example "News > Technology". See the official [Payload Nested Docs Plugin](https://payloadcms.com/docs/plugins/nested-docs) for more details.
+
+#### Globals
+
+See the [Globals](https://payloadcms.com/docs/configuration/globals) docs for details on how to extend this functionality.
+
+- `Header`
+
+  The data required by the header on your front-end like nav links.
+
+- `Footer`
+
+  Same as above but for the footer of your site.
+
+#### Access control
+
+Basic access control is setup to limit access to various content based based on publishing status.
+
+- `users`: Users can access the admin panel and create or edit content.
+- `posts`: Everyone can access published posts, but only users can create, update, or delete them.
+- `pages`: Everyone can access published pages, but only users can create, update, or delete them.
+
+For more details on how to extend this functionality, see the [Payload Access Control](https://payloadcms.com/docs/access-control/overview#access-control) docs.
+
+
+See [Payload Docs](https://payloadcms.com/docs/getting-started/what-is-payload) for more details.

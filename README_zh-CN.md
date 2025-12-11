@@ -56,6 +56,55 @@ S3_ENDPOINT=xxx
 2. 运行 `pnpm install && pnpm dev` 安装依赖并启动开发服务器
 3. 打开 `http://localhost:3000` 在浏览器中访问应用
 
-### 了解更多
+### 工作原理
+Payload 配置专门针对大多数网站的需求进行了定制，预配置如下：
 
-[Payload 官方文档](https://payloadcms.com/docs/getting-started/what-is-payload)
+#### Collections（集合）
+
+详细信息请参阅 [Collections](https://payloadcms.com/docs/configuration/collections) 文档。
+
+- ##### Users（用户认证）
+
+  Users 是启用了认证功能的集合，可以访问管理面板和未发布的内容。详情请参阅 [Access Control](#access-control访问控制)。
+
+  如需更多帮助，请参阅官方 [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) 或 [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) 文档。
+
+- ##### Posts（文章）
+
+  Posts 用于生成博客文章、新闻资讯或任何其他随时间发布的内容。所有文章都启用了布局构建器，您可以使用布局构建块为每篇文章生成独特的布局，详情请参阅 Layout Builder（#layout-builder）。文章还启用了草稿功能，您可以在发布到网站之前预览它们，详情请参阅 [Draft Preview](#draft-preview)。
+
+- ##### Pages（页面）
+
+  所有页面都启用了布局构建器，您可以使用布局构建块为每个页面生成独特的布局。页面还启用了草稿功能，您可以在发布到网站之前预览它们。
+
+- ##### Media（媒体）
+
+  这是启用了上传功能的集合，供页面、文章和项目使用，用于存储图片、视频、下载文件和其他资源。它具有预配置的尺寸、焦点和手动调整大小功能，帮助您管理图片。
+
+- ##### Categories（分类）
+
+  用于将文章分组的分类法。分类可以嵌套，例如"新闻 > 科技"。详情请参阅官方 [Payload Nested Docs Plugin](https://payloadcms.com/docs/plugins/nested-docs)。
+
+#### Globals（全局配置）
+
+详细信息请参阅 [Globals](https://payloadcms.com/docs/configuration/globals) 文档。
+
+- `Header`
+
+  前端页头所需的数据，如导航链接。
+
+- `Footer`
+
+  与上述类似，用于网站页脚。
+
+#### Access Control（访问控制）
+
+基本的访问控制已设置好，根据发布状态限制对各种内容的访问。
+
+- `users`：用户可以访问管理面板并创建或编辑内容。
+- `posts`：所有人都可以访问已发布的文章，但只有用户可以创建、更新或删除它们。
+- `pages`：所有人都可以访问已发布的页面，但只有用户可以创建、更新或删除它们。
+
+如需了解如何扩展此功能，请参阅 [Payload Access Control](https://payloadcms.com/docs/access-control/overview#access-control) 文档。
+
+更多详情请参阅 [Payload 官方文档](https://payloadcms.com/docs/getting-started/what-is-payload)。
